@@ -1,0 +1,564 @@
+/* Internal CSS (Now moved to style.css) */
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: #e6f2f7;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-custom {
+  background-color: white;
+  color: rgb(85, 193, 236);
+  margin:20px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-left:20px;
+}
+
+.nav-link-custom {
+  color: rgb(39, 161, 209);
+  font-weight: bold;
+}
+
+.nav-link-custom.active {
+  color: black;
+}
+
+.navbar-custom .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: skyblue;
+}
+
+.logo-container {
+  margin-left: 200px;
+}
+
+.navbar-nav-custom {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.button-custom:hover{
+  background-color:rgb(97, 36, 97) ;
+}
+
+.icon-container {
+  display: flex;
+  margin-left: 30px;
+}
+
+.icons-container {
+  margin-left: 40px;
+}
+
+.icon-container i {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.icon-container i:hover {
+  color: black;
+}
+
+.btn-primary-custom {
+  margin-left: 10px;
+}
+
+.button-custom {
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+}
+
+
+.nav-item:hover .dropdown-menu {
+  display: block !important; /* Show the dropdown when hovering over the nav item */
+}
+
+
+.container-custom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:120vh; 
+  background-color: #4ac1e9;
+  border-radius: 50px;
+  margin: 50px;
+  overflow: hidden;
+
+}
+
+
+
+
+
+.main-image {
+position: absolute;
+top:17%;
+left: 30%;
+  width: 500px;
+  height: 590px;
+  margin: 0 auto;
+  display: block;
+  
+}
+
+
+.chill {
+
+  position: absolute;
+  top: 150px;
+  left: 300px;
+  font-family: 'Lilita One', sans-serif;
+  color: #fff;
+  font-size: 150px;
+  font-weight: bold;
+
+}
+
+.treat {
+  position: absolute;
+  top: 270px;
+  left: 650px;
+  font-family: 'Lilita One', sans-serif;
+  color: #fff;
+  font-size: 150px;
+  font-weight: bold;
+  
+}
+
+.main-image{
+  position: absolute;
+
+
+}
+
+ .left-scoop {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  width: 200px;
+  margin: 20px;
+  animation: zoomInOutLight 3s infinite alternate; /* Apply a slower and lighter zooming animation */
+}
+
+/* Define the lighter zooming animation */
+@keyframes zoomInOutLight {
+  0% {
+    transform: scale(1); /* Start at normal size */
+  }
+  50% {
+    transform: scale(1.05); /* Light zoom in */
+  }
+  100% {
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+
+.right-scoop {
+  position: absolute;
+  top: -15%;
+  right: -20%;
+  left: 1140px;
+  width: 250;
+  transform: rotate(220deg); 
+    /* float: right;   */
+    object-fit: cover;
+    overflow: hidden;
+    
+    
+  
+}
+
+.icon-bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  width: 50px;
+}
+
+.decoration-white-1 {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  width: 150px;
+  
+  animation: dance-left 1s ease-in-out infinite, rotate-light 1s linear infinite;
+}
+
+@keyframes dance-left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes rotate-light {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(25deg);
+  }
+}
+
+.decoration-white-2 {
+  position: absolute;
+  top: 65%;
+  bottom: 25%;
+  left: 80%;
+  width: 150px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the distance of the bounce */
+  }
+}
+
+
+.description-container {
+  
+  position: absolute;
+  top: 60%;
+  left: 3%;
+  color: #fff;
+  max-width: 400px;
+}
+
+.shop-now-button {
+  background-color: #ff69b4;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.shop-now-button:hover{
+     background-color: rgb(105, 48, 105) ;
+}
+
+.avatars-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  /* right: 10%; */
+  left: 3%;
+  top: 90%;
+}
+
+.avatar-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: -10px;
+  border: 2px solid #fff;
+}
+
+.reviews-text {
+  margin-left: 10px;
+  color: white;
+}
+
+.navigation-buttons {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ .prev-button,
+ .next-button,
+ .line
+ {
+  padding: 10px 20px;
+  background: transparent;
+  color: rgb(51, 9, 51);
+  border: none;
+  cursor: pointer;
+  font-weight: bold; 
+  padding: 20px;
+  font-size: 20px;
+
+} 
+
+.navigation-buttons{
+  position:absolute;
+  background-color: #e6f2f7;
+
+  border-radius: 30px;
+ width: 250px;
+ height: 70px;
+top: 92%;
+
+
+}
+
+.prev-button:hover,    
+.next-button:hover {
+  color: #ec7cee;
+  background: linear-gradient(180deg, #a4b3e0, #b09fc4);
+}  
+
+
+
+.container2 {
+  position: relative;
+  background: linear-gradient(180deg, #a4b3e0, #b09fc4);
+  border-radius: 50px;
+  margin: 50px;
+  box-sizing: border-box;
+
+}
+
+.top {
+  margin-left: 20%;
+  
+}
+
+.img1{
+  height: 200px;
+  width: 200px;
+}
+.img2{
+  position:absolute;
+  height: 100px;
+  width: 100px;
+  margin-top: 100px;
+  margin-left: 200px;
+ 
+}
+
+.img21{
+  position:absolute;
+  height: 130px;
+  width: 80px;
+  margin-left: -80px;
+  margin-top: 70px;
+
+
+
+}
+.img1t,.img1t2{
+  position: relative;
+  height: 230px;
+  width: 210px;
+  background-color: white;
+  padding: 5px;
+ 
+  box-shadow: #333;
+}
+.img1t2{
+  position: relative;
+
+}
+.img1t{
+  transform: rotate(340deg);
+
+}
+.img1t2{
+  transform: rotate(20deg);
+
+
+}
+
+
+.image1,.image2{
+     display: flex;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  
+}
+ h1 {
+  font-size:50px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+ p {
+ margin-top: 30px;
+  font-size:30px;
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   
+}
+.cake2{
+  display: flex;
+  
+}
+
+.cake-icon,.cake-icon{
+  width: 100px; /* Set a default size for images */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+  cursor: pointer; /* Make the cursor a pointer to indicate interactivity */
+  margin-left: 100px;
+}
+.cake-icon1{
+  margin-left:200px;
+}
+
+/* Bounce effect when the image is clicked (active state) */
+.cake-icon:hover {
+  transform: scale(1.1) translateY(-10px); /* Scale and move the image up for a bounce effect */
+}
+
+.ice-cream-container {
+  margin: 50px;
+
+  background-size: cover;
+
+  background-repeat: no-repeat;
+ 
+  padding: 20px;
+}
+
+/* Header Section */
+header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header-left-image {
+  position: absolute;
+  left: -100px;
+  top: -150px;
+  width: 350px; /* Adjust size */
+}
+
+.header-right-image {
+  position: absolute;
+  right: -100px;
+  top: -90px;
+
+  width: 350px; /* Adjust size */
+  /* Adjust size */
+}
+
+/* .h2 {
+  
+  color: #333;
+  margin: 50px 0;
+  z-index: 1;
+  position: relative;
+} */
+
+/* Ice Cream Gallery */
+.ice-cream-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+ .ice-cream-item {
+  text-align: center;
+ } 
+
+.ice-cream-item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.ice-cream-item p {
+  font-size: 1rem;
+  color:   rgb(133, 111, 133);
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+
+/* View All Section */
+.view-all-section {
+  position: relative;
+  margin-top: 30px;
+padding: 50px;
+  text-align: center;
+}
+
+.view-all-btn {
+  background: rgb(87, 55, 87);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.view-all-btn:hover{
+  background-color: rgb(245, 142, 159);
+}
+.cone-image {
+  position: absolute;
+  bottom: -40px;
+  /* right: 50%; Center horizontally */
+  transform: translateX(50%); /* Adjust alignment */
+  width: 300px; /* Adjust size */
+  /* transform: rotate(-20deg); */
+  margin-left: 100px; /* Optional: rotate slightly */
+}
+
+.ice-cream-item {
+  position: relative;
+  display: inline-block;
+}
+
+.ice-cream-item img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.ice-cream-item:hover img {
+  border-radius: 50%;
+  border: 5px solid  rgb(87, 55, 87); /* Optionally, you can adjust the radius on hover */
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  top: 100px; /* Position the button above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color:  rgb(87, 55, 87); /* Button color */
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 20px;
+  display: none; /* Hide the button initially */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.ice-cream-item:hover .add-to-cart-btn {
+  display: block; /* Show the button when hovering */
+  opacity: 1;
+}
